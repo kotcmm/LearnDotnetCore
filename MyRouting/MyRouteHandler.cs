@@ -18,7 +18,7 @@ namespace MyRouting
             
             context.Handler = (c) =>
             {
-                var printStr = $"{a},controller:{c.GetRouteValue("controller")}," +
+                var printStr = $"controller:{c.GetRouteValue("controller")}," +
                 $"action:{c.GetRouteValue("action")},id:{c.GetRouteValue("id")}";
 
                 return c.Response.WriteAsync(printStr);
